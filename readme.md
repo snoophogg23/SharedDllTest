@@ -1,5 +1,10 @@
 # Shared dll Test
 
+## VS Tools
+
+    cmd
+    "%ProgramFiles%\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" && powershell
+
 ## CMake
 
     cmake --preset x64-Release  

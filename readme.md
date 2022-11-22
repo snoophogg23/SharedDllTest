@@ -9,7 +9,7 @@
 
     cmake --preset x64-Release  
     cmake --build out/build/x64-Release 
-    dumpbin.exe /exports .\out\build\x64-Debug\Hello.dll 
+    dumpbin.exe /exports .\out\build\x64-Release\Hello.dll 
 
 ## Docker
 

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.ConsoleViewerData": "csv",
+        "*.isbm_script": "csharp",
+        "*.ConsoleViewerRaw": "csv",
+        "iostream": "cpp"
+    }
+}

@@ -1,4 +1,4 @@
-# Shared dll Test
+# .NET & CMake native dll Test
 
 ## VS Tools
 

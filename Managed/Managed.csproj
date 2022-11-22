@@ -12,14 +12,17 @@
 	</Target>
   
 	<ItemGroup Condition="$([MSBuild]::IsOSPlatform('Linux'))">
-	  <Content Include="../out/build/linux-release/libHello.so">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+		<EmbeddedResource Include="../out/build/linux-release/libHello.so" >
+			<LogicalName>lib\libHello.so</LogicalName>
+		</EmbeddedResource>
 	</ItemGroup>
-  
+
 	<ItemGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
-	  <Content Include="../out/build/x64-$(ConfigurationName)/Hello.dll">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+		<EmbeddedResource Include="../out/build/x86-$(ConfigurationName)/Hello.dll" >
+			<LogicalName>lib\x86\Hello.dll</LogicalName>
+		</EmbeddedResource>
+		<EmbeddedResource Include="../out/build/x64-$(ConfigurationName)/Hello.dll" >
+			<LogicalName>lib\x64\Hello.dll</LogicalName>
+		</EmbeddedResource>
 	</ItemGroup>
 </Project>
